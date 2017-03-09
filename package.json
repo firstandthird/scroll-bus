@@ -1,0 +1,61 @@
+{
+  "name": "scroll-bus",
+  "version": "1.0.0",
+  "description": "Tiny library to centralize scroll handlers.",
+  "main": "dist/scroll-bus.js",
+  "module": "index.js",
+  "keywords": [
+    "browser",
+    "scroll",
+    "handler"
+  ],
+  "scripts": {
+    "start": "scriptkit",
+    "build": "scriptkit build",
+    "dev": "scriptkit dev",
+    "test": "cat test/scroll-bus.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
+    "prepublish": "scriptkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/scroll-bus.git"
+  },
+  "author": "First+Third",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/scroll-bus/issues"
+  },
+  "homepage": "https://github.com/firstandthird/scroll-bus#readme",
+  "devDependencies": {
+    "eslint-config-firstandthird": "3.2.0",
+    "eslint-plugin-import": "2.2.0",
+    "phantomjs-prebuilt": "2.1.14",
+    "scriptkit": "0.2.0",
+    "tap-spec": "4.1.1",
+    "tape-rollup": "4.6.4",
+    "tape-run": "2.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "firstandthird"
+  },
+  "scriptkit": {
+    "files": {
+      "dist/scroll-bus.js": "index.js",
+      "test/scroll-bus.test.dist.js": "test/scroll-bus.test.js"
+    },
+    "scripts": {
+      "babel": {
+        "exclude": [
+          "node_modules/tape-rollup/*"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "domassist": "1.7.1",
+    "tinybounce": "0.0.1"
+  }
+}
