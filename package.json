@@ -55,7 +55,7 @@
     }
   },
   "dependencies": {
-    "domassist": "1.8.0",
+    "domassist": "1.9.0",
     "tinybounce": "0.0.1"
   }
 }
