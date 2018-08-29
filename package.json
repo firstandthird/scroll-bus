@@ -1,6 +1,6 @@
 {
   "name": "scroll-bus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny library to centralize scroll handlers.",
   "main": "dist/scroll-bus.js",
   "module": "index.js",
