@@ -1,3 +1,9 @@
 test
 node_modules
 .git
+*.map
+.idea/
+.DS_Store
+.editorconfig
+.node-version
+.travis.yml
