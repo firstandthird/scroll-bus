@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Tiny library to centralize scroll handlers.",
   "main": "index.js",
-  "module": "dist/scroll-bus.esm.js",
+  "module": "dist/scroll-bus.js",
   "keywords": [
     "browser",
     "scroll",
@@ -14,7 +14,7 @@
     "build": "scriptkit build",
     "dev": "scriptkit dev",
     "pretest": "scriptkit build",
-    "test": "cat test/scroll-bus.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
+    "test": "cat test/scroll-bus.test.dist.bundle.js | tape-run --static . --browser phantomjs --render tap-spec",
     "prepublishOnly": "scriptkit"
   },
   "repository": {
@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/firstandthird/scroll-bus#readme",
   "devDependencies": {
-    "eslint-config-firstandthird": "4.3.0",
-    "eslint-plugin-import": "2.16.0",
-    "phantomjs-prebuilt": "2.1.16",
-    "scriptkit": "2.0.2",
-    "tap-spec": "5.0.0",
-    "tape-rollup": "4.6.4",
-    "tape-run": "5.0.0"
+    "eslint-config-firstandthird": "^4.4.0",
+    "eslint-plugin-import": "^2.18.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "scriptkit": "^3.0.0",
+    "tap-spec": "^5.0.0",
+    "tape-rollup": "^4.6.4",
+    "tape-run": "^6.0.0"
   },
   "eslintConfig": {
     "env": {
@@ -56,7 +56,7 @@
     }
   },
   "dependencies": {
-    "domassist": "^2.0.2",
-    "tinybounce": "^1.0.1"
+    "domassist": "^2.2.0",
+    "tinybounce": "^1.2.0"
   }
 }
